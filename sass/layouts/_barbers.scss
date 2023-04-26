@@ -20,17 +20,18 @@
   
   .cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   
-  .socials {
-    display: flex;   
-    justify-content: center;
-    gap: 10px;
-  }
+  
   
   .cards__item {
-    width: calc((100% - 60px) / 3);
+    // width: calc((100% - 60px) / 3);
+    width: 100%;
+    @media screen and(min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
   }
   
   .cards__top-wrap {
@@ -78,6 +79,12 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     margin-bottom: 30px;
+  }
+
+  .socials {
+    display: flex;   
+    justify-content: center;
+    gap: 10px;
   }
   
   .socials__link {
