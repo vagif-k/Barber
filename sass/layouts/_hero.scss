@@ -61,30 +61,24 @@
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-    @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+      @include retina {
     background-image:var(--bg-gradient),
     url(../images/hero-bg-mobile-2x.jpg);
 }
-    @include tablet{
+    @include tablet {
       padding: 272px 100px 237px;
       background-image:var(--bg-gradient),
       url(../images/hero-bg-tablet.jpg);
-      @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+      @include retina {
     background-image:var(--bg-gradient),
     url(../images/hero-bg-tablet-2x.jpg);
 }
     }
-    @include  desktop{
+    @include desktop {
       padding: 272px 100px 208px 100px;
       background-image:var(--bg-gradient),
       url(../images/hero-bg.jpg);
-      @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+      @include retina {
     background-image:var(--bg-gradient),
     url(../images/hero-bg-2x.jpg);
 }
